@@ -1,0 +1,31 @@
+body { 
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 50px;
+    padding: 0;
+}
+
+header {
+    text-align : center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+h1 {
+    margin: 0;
+}
+.section {
+    margin: 20px 0;
+}
+.section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.contact-info,
+.skills-list {
+    list-style; none;
+    padding; 0;
+}
