@@ -3,13 +3,26 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 50px;
-    padding: 0;
+    padding: 0; 
+ 
+}
+
+main{
+    margin: 20px;
 }
 
 header {
     text-align : center;
     padding: 20px;
     background-color: #f4f4f4;
+}
+
+img{
+
+    display: block ;
+    margin: auto;
+    width : 500px ;
+    height : 300px ;
 }
 
 
@@ -24,8 +37,61 @@ h1 {
     padding-bottom: 5px;
 }
 
-.contact-info,
+.contact-info
+
 .skills-list {
     list-style; none;
     padding; 0;
+}
+
+
+.navbar {
+    background-color: #ab0303;
+    overflow: hidden;
+}
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 ;
+    padding: 0 20px;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #357abd;
+    color: #f0f0f0;
+}
+.navbar .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .navbar-container {
+        flex-direction: column-reverse;
+    }
+    .navbar a:not(:last-child) {display: none;}
+    .navbar a.icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 20px;
+        top: 14px;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
